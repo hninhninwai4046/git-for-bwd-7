@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="2.gif" id="obj" alt="">
+    <!-- <button onclick="LightOn()">On</button>
+    <button onclick="LightOff()">Off</button> -->
+
+    <button>Control</button>
+    <script>
+
+        
+        // function LightOn(){
+        //     img.src="2.gif";
+        // }
+
+        // function LightOff(){
+        //     img.src="5.png";
+        // }
+
+        function control(){
+            let img=document.getElementById("obj");//local
+            // let arr=img.src.split("/");
+            console.log(img.src);
+            //console.log(img.src);
+
+            if(img.src=="1.gif"){
+                img.src="2.gif";
+            }else{
+                img.src="1.gif";
+            }
+        }
+    </script>
+</body>
+</html>

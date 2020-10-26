@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>To Do List</h4>
+    <div class="todo">
+        <div class="add-box" id="addBox">
+            <input type="text" id="input">
+            <button class="addBtn" onclick="addList()">Add</button>
+        </div>
+        <ul class="list" id="list">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Grape</li>
+        </ul>
+    </div>
+    <script>
+        let minTextLength=3;
+        let input=document.getElementById("input");
+        let list=document.getElementById("list");
+
+        function textFilter(x){
+            if(x){
+                if(x.length>=minTextLength){
+                    return x;
+                }else{
+                 alert("Min text length is 3");
+                    return false;
+                }
+            }else{
+                alert("Text is empty");
+                return false;
+            }
+        }
+
+        function addList(){
+            let inputText=textFilter(input.value);
+            
+            
+        //set
+            if(inputText){
+                list.innerHTML+=`<li> ${inputText}</li>`;
+                input.value="";
+            }
+        }
+    </script>
+</body>
+</html>

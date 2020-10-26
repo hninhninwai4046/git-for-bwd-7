@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Loop</h1>
+    <p>I have to do something over and over again </p>
+
+    <p>hello three kar htot mae</p>
+    
+    <p>Fruit List</p>
+    <ol>
+
+    </ol>
+
+    <script>
+        let arr=["apple","mango","banana","strawberry"];
+
+        let obj={
+            //properties
+            name:"hnin hnin wai",
+            age:19,
+            job:"student",
+            status:false,
+            //method
+            // teach:function(){
+            //     console.log(`${this.name} can teach web design`);
+            // }
+        };
+
+        for(x in obj){
+            document.querySelector("ol").innerHTML+=`<li>${x} - ${obj[x]} </li>`;
+        }
+
+        // for(let i=0;i<arr.length;i++){
+        //     document.querySelector("ol").innerHTML+=`<li>${arr[i]}</li>`;
+        // }
+
+        // for(x in arr){
+        //     document.querySelector("ol").innerHTML+=`<li>${arr[x]} for in </li>`;
+
+        // }
+
+        // for(x of arr){
+        //     document.querySelector("ol").innerHTML+=`<li>${x} for of </li>`;
+
+        // }
+             
+        // arr.map(function(el,index){
+        //     document.querySelector("ol").innerHTML+=`<li>${el} -${index} </li>`;
+
+        // });
+
+
+        for(let i=1; i<=3; i++){
+            console.log(`${i} hello`);
+        }
+
+        function  showHello(max){
+            for(let i=1; i<=max; i++){
+            console.log(`${i} hello`);
+            
+            }
+        }
+    </script>
+</body>
+</html>

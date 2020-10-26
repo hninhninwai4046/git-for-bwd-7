@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Design & Menu</title>
+
+	<style type="text/css">
+		
+		body{
+			background-color: skyblue;
+		}
+
+		.text-list{
+			list-style-type: none;
+			padding-left: 0;
+		}
+
+		.text-list li{
+			    background: #ffffff;
+			    margin-bottom: 10px;
+			    padding: 10px 15px;
+			    width: 150px;
+			    text-transform: uppercase;
+			    font-family: serif;
+			    border-left: 5px solid blue;
+				color: #ff00ff;
+				transition: 0.5s;
+				border-radius:  0 5px 5px 0;
+
+		}
+
+		.text-list li:hover{
+			border-left-width: 10px;
+			/*background-color: gray;*/
+			font-weight: bolder;
+		}
+		.field{
+			width: 200px;
+			border: 2px solid white;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		.box-title{
+			text-transform: uppercase;
+			font-family: serif;
+			color: white;
+			border: 2px solid white;
+			padding: 10px;
+			border-radius: 10px;
+			background: gray;
+		}
+
+		.nav-bar{
+				list-style-type: none;
+				padding: 10px;
+				background-color: white;
+		}
+
+		.nav-item{
+				display: inline-block;
+				padding: 10px 15px;
+				/*width: 90px;*/
+				font-family: sans-serif;
+				text-transform: uppercase;
+				transition: 0.5s;
+				color: orange;
+		}
+
+		.nav-item:hover{
+			background-color: skyblue;
+			color: white;
+		}
+
+		.nav-item.active{
+			background-color: skyblue;
+			color: white;
+		
+		}
+	</style>
+
+
+
+</head>
+<body>
+
+<fieldset class="field">
+	<legend class="box-title">My Test List</legend>
+<ul class="text-list">
+	<li>News</li>
+	<li>About</li>
+	<li>Home</li>
+	<li>Contant Us</li>
+	<li>Our Service</li>
+
+</ul>
+
+</fieldset>
+
+<nav>
+	<ul class="nav-bar">
+		<li class="nav-item active">News</li>
+		<li class="nav-item">About</li>
+		<li class="nav-item">Home</li>
+		<li class="nav-item">Contant Us</li>
+		<li class="nav-item">Our Service</li>
+		</ul>
+</nav>
+
+</body>
+</html>
